@@ -18,8 +18,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          apt update
-          apt install docker.io
-          docker pull ubuntu
-          docker save fedora | gzip > fedora.gzip
+          sudo apt update
+          sudo apt install docker.io
+          sudo docker pull ubuntu
+          sudo docker save fedora | gzip > fedora.gzip
           ls -la
