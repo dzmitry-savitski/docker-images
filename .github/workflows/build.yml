@@ -17,7 +17,7 @@ jobs:
             sudo docker pull $img
             sudo docker save $img | gzip > ./images/$img.gzip
           done < images.txt
-          gh release create $(date +'%Y%m%d') ./images/*.gzip
+          gh release create $(date +'%Y%m%d%hh%mm') ./images/*.gzip
         env:
           GITHUB_TOKEN: ${{ github.TOKEN }}
         shell: bash
