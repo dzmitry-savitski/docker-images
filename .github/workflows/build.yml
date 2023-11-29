@@ -20,4 +20,10 @@ jobs:
         run: |
           sudo docker pull fedora
           sudo docker save fedora | gzip > fedora.gzip
-          ls -la
+
+      - run: |
+          gh release create ${{ GITHUB_SHA }} fedora.gzip
+        env:
+          GITHUB_TOKEN: ${{ github.TOKEN }}
+        shell: bash
+        name: Creates a release in GitHub and uploads attachments
