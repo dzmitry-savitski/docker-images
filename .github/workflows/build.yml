@@ -22,7 +22,7 @@ jobs:
           sudo docker save fedora | gzip > fedora.gzip
 
       - run: |
-          gh release create ${{ GITHUB_SHA }} fedora.gzip
+          gh release create ${{ github.sha}} fedora.gzip
         env:
           GITHUB_TOKEN: ${{ github.TOKEN }}
         shell: bash
