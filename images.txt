@@ -1,4 +1,4 @@
 osixia/openldap
 tomcat:9-jdk17
-us-docker.pkg.dev/forgeops-public/images/amster:7.4.0
+us-docker.pkg.dev/forgeops-public/images/amster
 us-docker.pkg.dev/forgeops-public/images/am-base:7.4.0
