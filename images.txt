@@ -1,3 +1,2 @@
-alpine
 ubuntu
-fedora
+osixia/openldap
