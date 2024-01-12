@@ -1,3 +1,5 @@
 ubuntu
 osixia/openldap
 tomcat:9-jdk11-adoptopenjdk-hotspot
+us-docker.pkg.dev/forgeops-public/images/am
+us-docker.pkg.dev/forgeops-public/images/amster
