@@ -14,8 +14,7 @@ jobs:
       - run: |
           mkdir images
           while read img; do
-            name=${img//\//_}
-            name=${name//://_}
+            name=$(echo "$img" | sed 's/\//_/g; s/:/_/g')
             sudo docker pull $img
             sudo docker save $img | gzip > ./images/$name.gzip
           done < images.txt
