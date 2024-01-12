@@ -14,8 +14,9 @@ jobs:
       - run: |
           mkdir images
           while read img; do
+            $name = ${img//\//_}
             sudo docker pull $img
-            sudo docker save $img | gzip > ./images/$img.gzip
+            sudo docker save $img | gzip > ./images/$name.gzip
           done < images.txt
           gh release create $(date +'%Y-%m-%dT%H-%M') ./images/*.gzip
         env:
