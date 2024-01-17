@@ -1,4 +1,1 @@
-osixia/openldap
-tomcat:9-jdk17
-gcr.io/forgerock-io/amster:7.4.0
-gcr.io/forgerock-io/am-base:7.4.0
+dsavitski/saml-sp
