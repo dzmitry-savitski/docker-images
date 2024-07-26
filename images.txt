@@ -1,3 +1,1 @@
-dsavitski/saml-sp
-gcr.io/forgerock-io/ds:7.4.2
-gcr.io/forgerock-io/am-base:7.2.2
+gcr.io/forgerock-io/am-base/pit1:7.6.0-latest-postcommit
